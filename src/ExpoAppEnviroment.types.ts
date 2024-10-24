@@ -1,7 +1,6 @@
-export type ChangeEventPayload = {
-  value: string;
-};
+export type AppEnvironment = "simulator" | "testflight" | "appstore";
 
-export type ExpoAppEnviromentViewProps = {
-  name: string;
-};
+export interface ExpoAppEnviromentInterface {
+  readonly environment: AppEnvironment;
+  getEnvironment(): AppEnvironment;
+}
