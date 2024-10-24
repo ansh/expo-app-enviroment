@@ -3,8 +3,11 @@ import { requireNativeModule } from "expo-modules-core";
 import { AppEnvironment, ExpoAppEnviromentInterface } from "./ExpoAppEnviroment.types";
 
 // Get the native module
-const ExpoAppEnviroment: ExpoAppEnviromentInterface = requireNativeModule("ExpoAppEnviroment");
+const NativeModule = requireNativeModule("ExpoAppEnviroment");
 
-// Export the module as default and named export
-export { ExpoAppEnviroment };
+export const ExpoAppEnviroment = {
+  getEnvironment: (): AppEnvironment => NativeModule.getEnvironment(),
+  environment: NativeModule.environment as AppEnvironment,
+};
+
 export default ExpoAppEnviroment;

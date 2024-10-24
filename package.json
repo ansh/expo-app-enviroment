@@ -1,5 +1,5 @@
 {
-  "name": "expo-app-enviroment",
+  "name": "expo-app-environment",
   "version": "0.1.0",
   "description": "Figure out how your app was installed. Testflight, App Store, or Simulator? ",
   "main": "build/index.js",

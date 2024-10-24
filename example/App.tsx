@@ -1,4 +1,4 @@
-import * as ExpoAppEnviroment from "expo-app-enviroment";
+import ExpoAppEnviroment from "expo-app-enviroment";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
