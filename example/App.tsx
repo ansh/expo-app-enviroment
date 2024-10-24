@@ -1,10 +1,10 @@
-import ExpoAppEnviroment from "expo-app-enviroment";
+import { getEnvironment } from "expo-app-enviroment";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{ExpoAppEnviroment.getEnvironment()}</Text>
+      <Text>{getEnvironment()}</Text>
     </View>
   );
 }
