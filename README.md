@@ -40,7 +40,7 @@ export default function App() {
 
 - ✅ iOS
 - ✅ Android 
-- ❌ Web
+- ✅ Web (always returns `appstore`)
 
 
 
