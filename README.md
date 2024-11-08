@@ -32,17 +32,26 @@ export default function App() {
 ```
 ## Return Values
 
-- `simulator` - App is running in iOS Simulator or Android Emulator
-- `testflight` - App was installed via TestFlight (iOS) or Internal Testing Track (Android)
-- `appstore` - App was installed from App Store or Google Play Store
+### `simulator`
+- iOS: Running in iOS Simulator
+- Android: Running in Android Emulator
+- Web: Running on `localhost` or `127.0.0.1`
+
+### `testflight`
+- iOS: Installed via TestFlight
+- Android: Installed via Internal Testing Track
+- Web: N/A
+
+### `appstore`
+- iOS: Installed from App Store
+- Android: Installed from Google Play Store
+- Web: Running on any HTTPS domain
 
 ## Platform Support
 
 - ✅ iOS
 - ✅ Android 
-- ✅ Web (always returns `appstore`)
-
-
+- ✅ Web
 
 ## License
 
